@@ -9,7 +9,9 @@ function palindromeSwapper(str) {
   let newStr = '';
   for (var i = 0; i < str.length; i++) {
     for (var j = 0; j < str.length; j++) {
+      // debugger
       if (i === j) {
+        // debugger
         newStr += str[j+1];
         newStr += str[j];
         j++;
@@ -30,6 +32,7 @@ function palindromeSwapper(str) {
  */
 function isPalindrome(str) {
   if (str.split('').reverse().join('') === str) return true;
+  // debugger
   return false;   
 }
 
